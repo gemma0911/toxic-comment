@@ -5,9 +5,9 @@ import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-with open('tfidf_vectorizer.pkl', 'rb') as f:
+with open('train/tfidf_vectorizer.pkl', 'rb') as f:
     tfidf_vectorizer = pickle.load(f)
-with open('logistic_regression_model.pkl', 'rb') as f:
+with open('train/logistic_regression_model.pkl', 'rb') as f:
     clf = pickle.load(f)
 
 app = Flask(__name__)
